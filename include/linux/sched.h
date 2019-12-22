@@ -1465,7 +1465,7 @@ struct task_struct {
 	unsigned int	sequential_io;
 	unsigned int	sequential_io_avg;
 #endif
-	int nice_inc;
+	int nice_inc;  /* Define nice_inc. */
 	int nice;
 };
 	

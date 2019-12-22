@@ -187,13 +187,13 @@ extern struct task_group root_task_group;
 	.ptrace_entry	= LIST_HEAD_INIT(tsk.ptrace_entry),		\
 	.real_parent	= &tsk,						\
 	.parent		= &tsk,						\
-	.nice 		= 0,						\
-	.nice_inc 	= 0,						\
 	.children	= LIST_HEAD_INIT(tsk.children),			\
 	.sibling	= LIST_HEAD_INIT(tsk.sibling),			\
 	.group_leader	= &tsk,						\
 	RCU_POINTER_INITIALIZER(real_cred, &init_cred),			\
 	RCU_POINTER_INITIALIZER(cred, &init_cred),			\
+	.nice 		= 0,						\
+	.nice_inc 	= 0,						\
 	.comm		= INIT_TASK_COMM,				\
 	.thread		= INIT_THREAD,					\
 	.fs		= &init_fs,					\
